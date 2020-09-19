@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import TodoForm from './TodoForm'
-import { RiCloseCircleFill } from 'react-icons/ri'
+// import { RiCloseCircleFill } from 'react-icons/ri'
+import { BiTrash } from 'react-icons/bi'
 import { BiEdit } from 'react-icons/bi'
 
 function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
@@ -22,12 +23,12 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
     }
 
     return todos.map((todo, index) => (
-        <div className={todo.isComplete ? 'todo-row-complete' : 'todo-row'} key={index}>
-            <div key={todo.id} onClick={() => completeTodo(todo.id)}>
+        <div className={todo.isComplete ? 'todo-row complete' : 'todo-row'} key={index}>
+            <div className="todo-row-check" key={todo.id} onClick={() => completeTodo(todo.id)}>
                 {todo.text}
             </div>
             <div className="icons">
-                <RiCloseCircleFill 
+                <BiTrash 
                     onClick={() => removeTodo(todo.id)}
                     className='delete-icon'
                 />

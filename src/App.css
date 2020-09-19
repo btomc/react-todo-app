@@ -3,14 +3,10 @@
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', Arial, sans-serif;
-  }
+}
 
 body {
-    background: linear-gradient(
-        90deg,
-        rgb(15, 116, 23) 0%,
-        rgba(71, 201, 81, 1) 100%
-    );
+    background: linear-gradient(90deg,rgb(15, 116, 23) 0%,rgba(71, 201, 81, 1) 100%);
 }
 
 .todo-app {
@@ -72,39 +68,44 @@ h1 {
     color: #fff;
 }
 
+.todo-input.edit {
+    border: 2px solid  rgb(62, 65, 247) ;
+}
+
+.todo-btn.edit {
+    background:  rgb(62, 65, 247);
+    padding: 16px 22px;
+}
+
+.todo-btn.edit:hover {
+    background:  rgb(76, 79, 255);
+}
+
 .todo-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 4px auto;
     color: #fff;
-    background: linear-gradient(
-    90deg,
-    rgb(216, 111, 127) 0%,
-    rgb(245, 156, 169) 100%
-  );
-  padding: 16px;
-  border-radius: 7px;
-  width: 90%;
+    background: linear-gradient(90deg,rgb(216, 111, 127) 0%,rgb(245, 156, 169) 100%);
+    padding: 16px;
+    border-radius: 7px;
+    width: 90%;
+}
+
+
+.todo-row-check:hover {
+    cursor: pointer;
+    opacity: 0.6;
 }
 
 .todo-row:nth-child(3n + 1) {
-    background: linear-gradient(
-      90deg,
-      rgb(209, 37, 89) 0%,
-      rgb(226, 100, 138) 100%
-    );
+    background: linear-gradient(90deg,rgb(209, 37, 89) 0%,rgb(226, 100, 138) 100%);
 }
 
 .todo-row:nth-child(3n + 2) {
-    background: linear-gradient(
-      90deg,
-      rgb(38, 41, 179) 0%,
-      rgb(62, 65, 247) 100%
-    );
+    background: linear-gradient(90deg,rgb(38, 41, 179) 0%,rgb(62, 65, 247) 100%);
 }
-
-   
 
 .icons {
     display: flex;
@@ -120,6 +121,6 @@ h1 {
 
 .delete-icon {
     margin-right: 5px;
-    color: #333;
+    color: rgb(238, 237, 237);
 }
 

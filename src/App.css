@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+  }
+
+body {
+    background: linear-gradient(
+        90deg,
+        rgb(15, 116, 23) 0%,
+        rgba(71, 201, 81, 1) 100%
+    );
+}
+
+.todo-app {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 520px;
+    min-height: 600px;
+    background: #0f152e;
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 15px;
+    padding-bottom: 32px;
+}
+
+h1 {
+    margin: 32px 0;
+    color: azure;
+    font-size: 24px;
+}
+
+.complete {
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+
+.todo-form {
+    margin-bottom: 32px;
+}
+
+.todo-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 6px 0 0 6px;
+    border: 2px solid #43bf4d;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: azure;
+}
+
+.todo-input::placeholder {
+    color: rgb(190, 197, 197);
+}
+
+.todo-btn {
+    padding: 16px;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    outline: none;
+    background-color: #35b840;
+    opacity: 0.9;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.todo-btn:hover {
+    background-color: #42cc4d;
+    color: #fff;
+}
+
+.todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: #fff;
+    background: linear-gradient(
+    90deg,
+    rgb(216, 111, 127) 0%,
+    rgb(245, 156, 169) 100%
+  );
+  padding: 16px;
+  border-radius: 7px;
+  width: 90%;
+}
+
+.todo-row:nth-child(3n + 1) {
+    background: linear-gradient(
+      90deg,
+      rgb(209, 37, 89) 0%,
+      rgb(226, 100, 138) 100%
+    );
+}
+
+.todo-row:nth-child(3n + 2) {
+    background: linear-gradient(
+      90deg,
+      rgb(38, 41, 179) 0%,
+      rgb(62, 65, 247) 100%
+    );
+}
+
+   
+
+.icons {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.edit-icon:hover,
+.delete-icon:hover {
+    opacity: 0.7;
+}
+
+.delete-icon {
+    margin-right: 5px;
+    color: #333;
+}
+

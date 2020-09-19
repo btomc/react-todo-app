@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState } from 'react'
 import TodoForm from './TodoForm'
 import { RiCloseCircleFill } from 'react-icons/ri'
 import { BiEdit } from 'react-icons/bi'
